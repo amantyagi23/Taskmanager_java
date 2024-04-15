@@ -1,3 +1,5 @@
+
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
@@ -22,7 +24,13 @@ public class Main {
                     break;
 
                 case 2:
-                    
+                    // to see all tasks that are created 
+                    ArrayList<Task> tasks =  operation.getTaskArray();
+                    System.out.println("Hello I am here");
+                    for (int i = 0; i < tasks.size(); i++) {
+                        System.out.println(tasks.get(i).getTitle());
+                        System.out.println(tasks.get(i).getDescription());
+                    }
                     break;
             
                 default:

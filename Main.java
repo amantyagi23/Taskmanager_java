@@ -32,7 +32,14 @@ public class Main {
                         System.out.println(tasks.get(i).getDescription());
                     }
                     break;
-            
+
+                case 3:
+                    System.out.println("Enter Title");
+                    String title1 = sc.nextLine();
+
+                    operation.updateTask(title1);
+                    break;
+
                 default:
                     break;
             }
